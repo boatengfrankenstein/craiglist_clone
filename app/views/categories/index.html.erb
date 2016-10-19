@@ -3,7 +3,7 @@
 
 <h1>Categories</h1>
 <% @categories.each do |category| %>
-  <h3><%= category.title %></h3>
+  <h3><%= category.title.upcase %></h3>
   <ul>
     <% category.listings.each do |list| %>
       <li><%= list.title %></li>
